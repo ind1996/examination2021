@@ -1,0 +1,108 @@
+<!DOCTYPE html>   
+<html>   
+<head>  
+<meta name="viewport" content="width=device-width, initial-scale=1">  
+<title> Login Page </title>  
+<style>   
+Body {  
+  font-family: Calibri, Helvetica, sans-serif;  
+  background-color: white;  
+  
+}  
+button {   
+    background: #23463f; 
+       border-radius: 30px;  
+       width: 100%;  
+        padding: 10px;   
+        color: white;
+        margin: 10px 10px;   
+        border: none;   
+        text-align: left;
+        cursor: pointer;   
+         } 
+          .date {
+        font-size: 10px;
+        background-color: white;
+        border: 0px solid rgb(41, 13, 13);
+        padding: 0px;
+        margin: 0px;
+        text-align: right;
+    } 
+ form {   
+        border: 3px solid lightblue;
+        border-radius: 15px;  
+        background-image: url("https://pbs.twimg.com/media/ElO-XOfU0AEeZi6.jpg") ;
+        background-size: cover;
+        background-attachment: fixed;
+        background-size: 500px;
+
+    
+    }   
+ 
+ button:hover {   
+        opacity: 0.7;   
+    }   
+ 
+        
+     
+ .container {   
+        padding: 25px;   
+        background-color: lightblue; 
+        margin-left: 50%;
+        border-radius: 10px;
+        text-align: center;
+    }   
+</style>   
+</head>    
+<body>    <div class="date">
+    <span id="time"></span>
+   
+</div>
+    <left> <h2> Welcome to NIT Jamshedpur</h2> </left>   
+    <form>  
+        <div class="container">  
+            
+            <label>Admin </label>
+            <button type="submit" >Admin</button>
+            <label>Student </label>     
+            <button type="submit">Student</button>     
+            <i class="fas fa-user-circle"></i>
+            
+        </div>  
+         
+    </form> 
+       <script>
+        console.log("date and time");
+        let now = new Date();
+        console.log(now);
+
+        let dt = new Date(1000);
+        console.log(dt);
+
+        let newDate = new Date(3020, 4, 6, 9, 3, 2, 34);
+        console.log(newDate);
+
+        let yr = newDate.getFullYear();
+        console.log("The year is ", yr);
+
+        let dat = newDate.getDate();
+        console.log("The date is ", dat);
+
+        let month = newDate.getMonth();
+        console.log("The month is ", month);
+
+        let hours = newDate.getHours();
+        console.log("The hours is ", hours);
+
+        newDate.setDate(8);
+        newDate.setMinutes(29);
+        console.log(newDate)
+        setInterval(updateTime, 1000);
+
+        function updateTime() {
+            time.innerHTML = new Date();
+        }
+
+    </script>   
+</body>     
+</html>  
